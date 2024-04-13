@@ -1,0 +1,154 @@
+
+
+.title{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.title_h1{
+    margin-bottom: -1%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.gallery {
+    display:block;
+    flex-wrap: wrap;
+}
+
+.gallery img{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    cursor: pointer;
+} 
+
+.container{
+    margin: 5px;
+    width:200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container:hover img {
+    transform:  scale (1.09);
+}
+
+.container img{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.content {
+    background-color: rgba(126, 126, 223, 0.47);
+    position: absolute;
+    top:-120%;
+    left: 5%;
+    text-align: justify;
+    width: 200px;
+    height: 200px;
+    color: #fff;
+    transition: all .5s;
+} 
+
+.content h3{
+   text-align: center;
+   font-size: 15px;
+   border-bottom: 1px solid #808080;
+   padding: -4px  10px;
+}
+
+.content p{ 
+    display:flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #fff;
+    font-size: 16px;
+    width: 90%;
+    text-align: start;
+   
+    
+    
+}
+
+.container:hover  .content{
+    top:0
+}
+
+.thumbnails{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.thumbnails img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+button {
+    position:absolute;
+    right: 20px;
+    width: 30px;
+    height: 28px;
+    background: #120d6c3e;
+    border-radius: 8%;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    background-image: url(./photo_frame.svg);
+    background-repeat:no-repeat;
+  }
+ 
+  
+
+
+@media screen and (max-width: 700px) {
+   
+    .thumbnails img {
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        width: 100px;
+        height: 100px;
+    }
+
+    .gallery img{
+        width: 120px;
+        height: 160px;
+        cursor: pointer; 
+    } 
+    
+    .container{
+        margin: 0px;
+        width:106px;
+        position: relative;
+        overflow: hidden;
+    }
+   
+    .content h3{
+       text-align: center;
+       font-size: 14px;
+       border-bottom: 1px solid #808080;
+    
+       width:50%;
+    }
+    
+    .content p{ 
+     width: 100px;
+     font-size: 15px;
+
+}
+
+ 
+
+ }
+
